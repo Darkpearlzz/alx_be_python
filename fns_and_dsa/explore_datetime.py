@@ -20,7 +20,7 @@ if __name__ == "__main__":
     display_current_datetime()
     
     try:
-        num_days = int(input("\nEnter a number of days to add to the current date: "))
+        num_days = int(input("\nEnter the number of days to add to the current date: "))
         
         calculate_future_date(num_days)
     except ValueError:
