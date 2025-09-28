@@ -1,11 +1,11 @@
-FAHRENHEIT_TO_CELSIUS = (lambda f: (f - 32) * 5/9)
-CELSIUS_TO_FAHRENHEIT = (lambda c: (c * 9/5) + 32)
+FAHRENHEIT_TO_CELSIUS = 5/9
+CELSIUS_TO_FAHRENHEIT = 9/5
 
 def convert_to_celsius(fahrenheit):
-    return FAHRENHEIT_TO_CELSIUS(fahrenheit)
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS
 
 def convert_to_fahrenheit(celsius):
-    return CELSIUS_TO_FAHRENHEIT(celsius)
+    return (CELSIUS_TO_FAHRENHEIT * celsius) + 32
 
 temp = float(input("Enter the temperature to convert: "))
 unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
