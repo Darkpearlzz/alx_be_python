@@ -1,5 +1,6 @@
 import sys
 from robust_division_calculator import safe_divide
+from library_management import Library, Book
 
 def main():
     if len(sys.argv) != 3:
